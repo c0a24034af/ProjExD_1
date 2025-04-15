@@ -32,8 +32,7 @@ def main():
             a2 += 2
         if key_lst[pg.K_LEFT]:
             a2 -= 1
-        if key_lst:
-            kk_rct.move_ip((-1,0))
+        a2 -= 1
         kk_rct.move_ip((a2,a1))
         x = tmr % 3200
         screen.blit(bg_img, [-x, 0])
