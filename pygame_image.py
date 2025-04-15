@@ -29,6 +29,8 @@ def main():
             kk_rct.move_ip((+1,0))
         if key_lst[pg.K_LEFT]:
             kk_rct.move_ip((-1,0))
+        if key_lst:
+            kk_rct.move_ip((-1,0))
         x = tmr % 3200
         screen.blit(bg_img, [-x, 0])
         screen.blit(bg_img2, [-x + 1600, 0])
